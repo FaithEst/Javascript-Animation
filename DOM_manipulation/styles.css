@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    background-color: rgb(18, 231, 160);
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+.animal-form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: solid 1px rgb(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+label{
+    margin: 8px 0;
+}
+.container button{
+    background-color: rgb(37, 134, 101);
+    border-style: none;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ul */
+.cards{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+.listItem{
+    width: 100%;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    background-color: white;
+}
+.listItem img{
+    width: 100%;
+}
