@@ -15,7 +15,7 @@ function renderAnimals(animal){
 // fetch data function
 function fetchDataFromServer(){
     fetch('http://localhost:3000/animalData')
-    .then(res => res.json())
-    .then(resultData => resultData.forEach(element => renderAnimals(element)))
+    .then(response => response.json())
+    .then(resultData => resultData.forEach(animal => renderAnimals(animal)))
 }
 fetchDataFromServer();
