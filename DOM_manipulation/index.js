@@ -14,14 +14,6 @@ function renderAnimals(animal){
     document.getElementById("animal-list").appendChild(animalsDisplay);
 }
 
-// fetch data function for all animals
-function fetchDataFromServer(){
-    fetch('http://localhost:3000/animalData')
-    .then(response => response.json())
-    .then(resultData => resultData.forEach(animal => renderAnimals(animal)))
-}
-
-
 // event listener for a form 
 document.querySelector("form#animal-form").addEventListener('submit', handleSubmit);
 
@@ -34,16 +26,15 @@ function handleSubmit(e){
         description:e.target.description.value,
         donations: 0
     }
-    renderAnimals(animalObj);
-    adoptAnimal(animalObj);
+    renderAnimals(animalObj); //fetch data from json file
+    adoptAnimal(animalObj); // POSTs new data to json file 
 }
-
 
 // using POST request to update our json file
 function adoptAnimal(animalObj){
-    fetch('http://localhost:3000/animalData', {     // takes in 2 arguments
+   return fetch('http://localhost:3000/animalData',{     // takes in 2 arguments
         method: 'POST',
-        headers: {
+        headers:{
             'Content-Type': 'application/json'
         },
         body:JSON.stringify(animalObj)
@@ -51,3 +42,13 @@ function adoptAnimal(animalObj){
     .then(response => response.json())
     .then(animalData => console.log(animalData))
 }
+
+// fetch data function for all animals
+function getAllAnimals(){
+    fetch('http://localhost:3000/animalData')
+    .then(response => response.json())
+    .then(resultData => resultData.forEach(animal => renderAnimals(animal)))
+}
+
+
+getAllAnimals();
