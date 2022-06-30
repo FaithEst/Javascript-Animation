@@ -3,25 +3,25 @@
         {
             "animalName": "Red Panda",
             "imageUrl": "https://images.pexels.com/photos/7506259/pexels-photo-7506259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "not actually a panda",
+            "description": "Not actually a panda",
             "donations": 0
         },
         {
             "animalName": "Pangolin",
             "imageUrl": "https://images.unsplash.com/photo-1603703661537-137f7373028a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
-            "description": "not actually a panda",
+            "description": "They are mammals of the order Pholidota",
             "donations": 0
         },
         {
             "animalName": "Mantis shrimp",
             "imageUrl": "https://images.unsplash.com/photo-1588345450103-646fb4cccf9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-            "description": "not actually a panda",
+            "description": "They typically grow to around 10 cm in length",
             "donations": 0
         },
         {
             "animalName": "Gibbon",
             "imageUrl": "https://images.unsplash.com/photo-1595419672643-bbd6da3525c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2liYm9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-            "description": "not actually a panda",
+            "description": "Live in subtropical and tropical rainforest",
             "donations": 0
         }
     ]
