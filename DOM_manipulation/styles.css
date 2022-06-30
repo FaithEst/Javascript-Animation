@@ -60,3 +60,6 @@ label{
     height: 400px;
     object-fit: cover;
 }
+.listItem p{
+    font-size: 20px;
+}
